@@ -17,7 +17,9 @@
 	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/lk.css">
 	<link rel="stylesheet" href="css/calc.css">
-	
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/lk-normalize.css">
+
 </head>
 <body class="page-lk">
 	
@@ -75,13 +77,19 @@
             <div class="container">
                 <div class="row m-0">
                     <div class="manager__block-wrap">
-                        <div class="manager__block" data-js="managerToggle">
-                            <div class="manager__block-ava" style="background-image: url(img/ava1.jpg);"></div>
-                            <div class="manager__block-role">Менеджер по продажам</div>
-                            <div class="manager__block-fio">София Морозова</div>
-                            <a href="" class="btn btn--brown--small"><img src="img/arr5.svg" alt=""></a>
+                        <div class="manager__block manager__block_user manager__bonus">
+                            <div class="bonus_bb">
+                                <div class="bonus-img"><img src="img/bonus.png" alt=""></div>
+                                <p>Ваша скидка</p>
+                            </div>
+                            <a href="" class="btn btn--brown--small">17%</a>
                         </div>
-        
+                        <div class="burger brg lk_burger">
+                            <a class="brglk">
+                               <img src="img/burger.png" alt="" class="open">
+                               <img src="img/close2.svg" class="close">
+                            </a>  
+                        </div>
                         <div class="manager__block-hidden">
                             <div class="manager__block-hidden-role">Менеджер по продажам</div>
                             <div class="manager__block-hidden-fio">София Морозова</div>
@@ -99,11 +107,12 @@
                     </div>
         
                     <div class="manager__block-wrap">
-                        <div class="manager__block" data-js="managerToggle">
-                            <div class="manager__block-ava" style="background-image: url(img/ava2.jpg);"></div>
-                            <div class="manager__block-role">Менеджер сопровождения</div>
-                            <div class="manager__block-fio">Алексей Михайлов</div>
-                            <a href="" class="btn btn--blue--small"><img src="img/arr5.svg" alt=""></a>
+                        <div class="manager__block manager__block_user manager__bonus">
+                            <div class="bonus_bb">
+                                <div class="bonus-img"><img src="img/price.png" alt=""></div>
+                                <p>Ваши бонусы</p>
+                            </div>
+                            <a href="" class="btn btn--blue--small">3500</a>
                         </div>
         
                         <div class="manager__block-hidden">
@@ -136,7 +145,7 @@
 
                             <div class="manager__block-hidden-subhh">Пропущенные</div>
                             <div class="manager__block-hidden-items">
-                                <a href="lk-chats2.html" class="manager__block-hidden-item manager__block-hidden-item--note">
+                                <a href="" class="manager__block-hidden-item manager__block-hidden-item--note">
                                     <div class="manager__block-hidden-ava" style="background-image: url(img/ava6.png);"></div>
                                     <div class="manager__block-hidden-desc">
                                         <div class="manager__block-hidden-label2">11:28</div>
@@ -258,10 +267,16 @@
                 </div>
             </div>
         </div>
+        <section class="breadcrumbs-lk breadcrumbs-lk-calc">
+            <a href="#">
+    
+                <span>Калькулятор</span>
 
-        <div class="lk__main">
+              </a>
+         </section>
+        <div class="lk__main lk__main__calc">
             <div class="container">
-                <div class="calc">
+                <div class="calc desktop-calc">
                     <div class="calc__steps">
                         <div class="calc__step active" data-id="1">1. Выбор конструкции</div>
                         <div class="calc__step" data-id="2">2. Размеры</div>
@@ -498,6 +513,364 @@
                         </div>
                     </div>
                 </div>
+                <div class="mobile-calc">
+                    <div class="row">
+                        <div class="hidden__col col-lg-4">
+                             <h2 class="modal-title text-center">Калькулятор</h2>
+                        </div>
+                        <div class="hidden__col  col-lg-4">
+                            
+                            <form action="" class="form form--mod2 form--mod3 w-100">
+                                <div data-item="1" class="step-block active">
+                                    <div class="form_head">
+                                        <div class="step-text">Шаг 1</div>
+                                        Выбор конструкции
+                                    </div>
+                                    <div class="form_action">
+                                        <div class="step active"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                        
+                                    </div>
+                                    <div class="form-content">
+                                        <div class="form-check-block">
+                                            <p>Напольно-потолочная
+                                                <br>
+                                                перегородка НОРМА</p>
+                                                <div class="check-item">
+                                                    <input type="checkbox" class="check-item">
+                                                </div>
+                                                
+                                        </div>
+                                        <div class="form-check-block">
+                                            <p>
+                                                Раздвижная
+                                                <br>
+                                                перегородка НОРМА
+                                            </p>
+                                            <div class="check-item">
+                                                <input type="checkbox" class="check-item">
+                                            </div>
+                                        </div>
+                                        <div class="form-check-block">
+                                            <p>
+                                                Раздвижная стена
+                                                <br>
+                                                НОРМА
+                                            </p>
+                                            <div class="check-item">
+                                                <input type="checkbox" class="check-item">
+                                            </div>
+                                        </div>
+                                        <div class="form-check-block">
+                                            <p>Раздвижная стена
+                                                <br>
+                                                PARTHOS</p>
+                                                <div class="check-item">
+                                                    <input type="checkbox" class="check-item">
+                                                </div>
+                                        </div>
+                                        <div class="question-block">
+                                            <div><img src="img/question.png"></div>
+                                            </p>Что такое конструкция “Раздвижная
+                                            перегородка НОРМА”?</p>
+                                        </div>
+                                        <div class="btn-block">Перейти к выбору размера</div>
+                                    </div>
+                                    
+                                </div>
+                                <div data-item="2" class="step-block">
+                                    <div class="form_head">
+                                        <div class="step-text">Шаг 2</div>
+                                        Выбор размера
+                                    </div>
+                                    <div class="form_action">
+                                        <div class="step active"></div>
+                                        <div class="step active"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                    </div>
+                                    <div class="form-content">
+                                        <div class="form-input-block">
+                                            <label>Ширина (мм)</label>
+                                            <div class="input-mask">0</div>
+                                            <div class="range">
+                                                <input type="range" class="range slider" min="0" max="25000" value="0">
+                                                <div class="scrollbar"></div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="form-input-block">
+                                            <label>Высота (мм)</label>
+                                            <div class="input-mask">0</div>
+                                            <div class="range">
+                                                <input type="range" class="range slider" min="0" max="25000" value="0">
+                                                <div class="scrollbar"></div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="btn-block">Перейти к выбору уровня шумоизоляции</div>
+                                    </div>
+                                    
+            
+                                </div>
+                                <div data-item="3" class="step-block">
+                                    <div class="form_head">
+                                        <div class="step-text">Шаг 3</div>
+                                        Выбор уровня звукоизоляции  
+                                    </div>
+                                    <div class="form_action">
+                                        <div class="step active"></div>
+                                        <div class="step active"></div>
+                                        <div class="step active"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                        
+                                    </div>
+                                    <div class="form-content">
+                                        <div class="form-check-block checked">
+                                            <p>37 дБ</p>
+                                                <div class="check-item checked">
+                                                    <input type="checkbox" class="check-item" checked>
+                                                </div>
+                                                
+                                        </div>
+                                        <div class="form-check-block">
+                                            <p>
+                                                43 дБ
+                                            </p>
+                                            <div class="check-item">
+                                                <input type="checkbox" class="check-item">
+                                            </div>
+                                        </div>
+                                        <div class="form-check-block">
+                                            <p>
+                                                46 дБ
+                                            </p>
+                                            <div class="check-item">
+                                                <input type="checkbox" class="check-item">
+                                            </div>
+                                        </div>
+                                        <div class="form-check-block">
+                                            <p>50 дБ</p>
+                                                <div class="check-item">
+                                                    <input type="checkbox" class="check-item">
+                                                </div>
+                                        </div>
+                                        <div class="form-check-block">
+                                            <p>53 дБ</p>
+                                                <div class="check-item">
+                                                    <input type="checkbox" class="check-item">
+                                                </div>
+                                        </div>
+                                        
+                                        <div class="btn-block">Перейти к выбору материала отделки</div>
+                                    </div>
+                                </div>
+                                <div data-item="4" class="step-block">
+                                    <div class="form_head">
+                                        <div class="step-text">Шаг 4</div>
+                                        Выбор материала отделки
+                                    </div>
+                                    <div class="form_action">
+                                        <div class="step active"></div>
+                                        <div class="step active"></div>
+                                        <div class="step active"></div>
+                                        <div class="step active"></div>
+                                        <div class="step"></div>
+                                        <div class="step"></div>
+                                        
+                                    </div>
+                                    <div class="form-content">
+                                        <div class="form-check-block">
+                                            <p>MEL ЛДСП складская программа</p>
+                                                <div class="check-item">
+                                                    <input type="checkbox" class="check-item">
+                                                </div>
+                                                
+                                        </div>
+                                        <div class="form-check-block checked">
+                                            <p>
+                                                HPL Пластик Formica
+                                            </p>
+                                            <div class="check-item checked">
+                                                <input type="checkbox" class="check-item" checked>
+                                            </div>
+                                        </div>
+                                        <div class="form-check-block">
+                                            <p>
+                                                OAK Шпон складская программа
+                                            </p>
+                                            <div class="check-item">
+                                                <input type="checkbox" class="check-item">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="question-block">
+                                            <div><img src="img/question.png"></div>
+                                            </p>Что такое материал отделки “HPL Пластик Formica”?</p>
+                                        </div>
+                                        <div class="btn-block">Перейти к выбору типа парковки</div>
+                                    </div>
+                                </div>
+                                <div data-item="5" class="step-block">
+                                    <div class="form_head">
+                                        <div class="step-text">Шаг 5</div>
+                                        Выбор типа парковки
+                                    </div>
+                                    <div class="form_action">
+                                        <div class="step active"></div>
+                                        <div class="step active"></div>
+                                        <div class="step active"></div>
+                                        <div class="step active"></div>
+                                        <div class="step active"></div>
+                                        <div class="step"></div>
+                                        
+                                    </div>
+                                    <div class="form-content">
+                                        <div class="form-check-block">
+                                            <p>OG</p>
+                                                <div class="check-item">
+                                                    <input type="checkbox" class="check-item">
+                                                </div>
+                                                
+                                        </div>
+                                        <div class="form-check-block checked">
+                                            <p>
+                                                FG
+                                            </p>
+                                            <div class="check-item checked">
+                                                <input type="checkbox" class="check-item" checked>
+                                            </div>
+                                        </div>
+                                        <div class="form-check-block">
+                                            <p>
+                                                FG
+                                            </p>
+                                            <div class="check-item">
+                                                <input type="checkbox" class="check-item">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="question-block">
+                                            <div><img src="img/question.png"></div>
+                                            </p>Что такое тип парковки “OG”?</p>
+                                        </div>
+                                        <div class="btn-block">Перейти к выбору количества дверей</div>
+                                    </div>
+                                </div>
+                                <div data-item="6" class="step-block">
+                                    <div class="sub_header">
+                                        Стоимость собранной вами
+                                        <br>
+                                        конструкции:
+                                    </div>
+                                    <div class="price-block">
+                                        95 666 ₽*
+                                    </div>
+                                    
+                                    <div class="hidden__col video-block">
+                                        <div class="tovar__el tovar__el--mod tovar__el--video tv__iframe" style="background-image: url(img/price_video.png);">
+                                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/POmoZ--MpWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="small-text">
+                                        *Усреднённая стоимость товара без учета НДС.
+                                        <br>
+                                        Доставка и монтаж рассчитываются отдельно.
+                                    </div>
+                                    <div class="btns-block">
+                                        <a class="btn"><img src="img/arrow-left.png"></a>
+                                        <a class="btn"><span>Получить точный расчет</span><img src="img/plus-minus.png"></a>
+                                    </div>
+                                </div>
+                                <div data-item="7" class="step-block">
+                                    <div class="row">
+                                        <div class="hidden__col col-lg-4">
+                                             <h2 class="modal-title text-center">Расчет проекта</h2>
+                                            <p class="text-center">Соберем ваш проект всего за 45 минут. Наш консультант свяжется с вами в ближайшее время для обсуждения всех деталей вашего заказа.</p>
+                                        </div>
+                                        <div class="hidden__col  col-lg-4">
+                                            
+                                            <form action="" class="form form--mod2 form--mod3 w-100">
+                                                <div class="ks-select select w-100 mb-3" name="">
+                                                    <div class="ks-select__current">
+                                                      <span>Архитектор</span>
+                                                      <img src="img/arr4.svg" alt="" class="ml-2">
+                                                    </div>
+                                                    <div class="ks-select__block" style="display: none;">
+                                                        <div class="ks-select__list">
+                                                            <div class="ks-select__item active">Архитектор</div>
+                                                            <div class="ks-select__item">Клиент</div>
+                                                            <div class="ks-select__item">Партнер</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form__line">
+                                                    <input type="text" placeholder="Имя">
+                                                </div>
+                                                <div class="form__line">
+                                                    <input type="text" placeholder="Почта">
+                                                </div>
+                                                <div class="form__line">
+                                                    <input type="tel" placeholder="Телефон">
+                                                </div>
+                                            
+                                                    
+                                                <a href="" class="btn w-100 p-0 gray-btn">Прикрепить проект <img src="images/icon.png"></a>
+                                                
+                                                <div class="form__line">
+                                                    <input type="text" placeholder="Примечания">
+                                                </div>
+                                                 <label for="politika" class="checkbox-wrap">
+                                                    <input type="checkbox" id="politika" style="display: none;" checked="">
+                                                    <div class="checkbox"></div>
+                                                    <span>Нажимая кнпоку “Отправить заявку”
+                                                        я соглашаюсь с Условиями обработки
+                                                        персональных данных</span>
+                                                </label>
+                                                <a href="lk.html" class="btn btn--blue w-100 p-0" type="submit">Отправить заявку</a>
+                                            
+                                        </div>
+                                      
+                                        
+                                    </div>
+                                </div>
+                                <div data-item="8" class="step-block">
+                                    <div class="hidden__col col-lg-4">
+                                        <h2 class="modal-title text-center">Что такое конструкция “Раздвижная перегородка НОРМА”?</h2>
+                                       <p class="text-center paragraph">Раздвижная перегородка NORMA – это звукоизоляционная и пожаробезопасная конструкция типа «гармошка». Она состоит из отдельных панелей, которые перемещаются по потолочному треку и собираются в парковочную зону. Панели скрепляются между собой специальными петлями. Для удержания в заданном положении используются магнитные защелки. Открывать раздвижную стену легко, с этим справится любой человек. Материал раздвижной конструкции: ЛДСП, шпон, магнитно-маркерное покрытие, стеклянные вставки, алюминиевый профиль и многое другое.</p>
+                                   </div>
+                                   <div class="hidden__col col-lg-4 full-col">
+                                       <div class="half-part">
+                                           <img src="img/map_left.png">
+                                       </div>
+                                       <div class="half-part">
+                                        <img src="img/map_right.png">
+                                       </div>
+                                   </div>
+                                   <div class="hidden__col col-lg-4">
+                                    <p class="text-center paragraph">
+                                    Раздвижная перегородка гармошка зонирует пространство помещения на несколько отдельных зон. Каждую из них можно использовать для определенных задач (переговоры, работа, обучение, занятия музыкой, танцами). Исчезает необходимость в дополнительном помещении, а это немалая экономия средств. Именно поэтому раздвижные перегородки используют в различных областях деятельности: концертные, спортивные и конференц-залы, гостиницы, школы и детские сады, квартиры и коттеджи. Раздвижные перегородки очень популярны в офисах.
+                                    </p>
+                                   </div>
+            
+                                </div>
+                                
+            
+                                
+                            </form>
+                        </div>
+                      
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -556,10 +929,125 @@
             </div>
         </div>
     </div>
+    <div class="lk-footer">
+        <div class="lk-footer-logo">
+             <img src="img/logo3.svg" alt="folding">
+        </div>
+     </div>
+     <div class="lk-mobile-container ">
+        <div class="mobile-container-inner-lk ">
+            <div class="lk-mob-item">
+                <a href="lk.html" class="lk__aside-link lk__aside-link--active">
+                    <img src="img/lk1.svg" alt="">
+                    <img src="img/lk1_a.svg" alt="">
+                    Личный кабинет
+                </a>
+            </div>
+            <div class="lk-mob-item">
+                <a href="lk-orders.html" class="lk__aside-link">
+                    <img src="img/lk2.svg" alt="">
+                    <img src="img/lk2_a.svg" alt="">
+                    Заказы
+                </a>
+            </div>
+            <div class="lk-mob-item">
+                <a href="lk-chats.html" class="lk__aside-link">
+                    <img src="img/lk3.svg" alt="">
+                    <img src="img/lk3_a.svg" alt="">
+                    Чаты
+                </a>
+            </div>
+            <div class="lk-mob-item">
+                <a href="lk-calc.html" class="lk__aside-link">
+                    <img src="img/lk4.svg" alt="">
+                    <img src="img/lk4_a.svg" alt="">
+                    Калькулятор
+                </a>
+            </div>
+            <div class="lk-mob-item">
+                <a href="lk-doc.html" class="lk__aside-link">
+                    <img src="img/lk5.svg" alt="">
+                    <img src="img/lk5_a.svg" alt="">
+                    Документы
+                </a>
+            </div>
+            <div class="lk-mob-item">
+                <a href="lk-book.html" class="lk__aside-link">
+                    <img src="img/lk6.svg" alt="">
+                    <img src="img/lk6_a.svg" alt="">
+                    Закладки
+                </a>
+            </div>
+            <div class="lk-mob-item">
+                <a href="lk-orders.html" class="lk__aside-link">
+                    <img src="img/lk2.svg" alt="">
+                    <img src="img/lk2_a.svg" alt="">
+                    Заказы
+                </a>
+            </div>
+         
+        </div>
+        <div class="mobile-container-inner-lk ">
+            <div class="lk-mob-item lkmob-info_item">
+                <div class="manager__block " data-js="managerToggle">
+                    <div class="manager__block-ava" style="background-image: url(img/ava2.jpg);"></div>
+                    <div class="manager__block-role">Менеджер сопровождения</div>
+                    <div class="manager__block-fio">Алексей Михайлов</div>
+                    <a href="" class="btn btn--blue--small"><img src="img/chat.png" alt="" class="rot-img"></a>
+                </div>
+                <div class="manager_block_info">
+                    <div class="inf_wrap">
+                        <p>Почта</p>
+                        <a href="#">exampleClient@gmail.com</a>
+                    </div>
+                    <div class="inf_wrap">
+                        <p>Телефон</p>
+                        <a href="#">+7 (999) 333-42-63</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lk-mob-item  lkmob-info_item">
+                <div class="manager__block " data-js="managerToggle">
+                    <div class="manager__block-ava" style="background-image: url(img/ava1.jpg);"></div>                <div class="manager__block-role">Менеджер сопровождения</div>
+                    <div class="manager__block-fio">София Морозова</div>
+                    <a href="" class="btn btn--brown--small"><img src="img/chat.png" alt="" class="rot-img"></a>
+                </div>
+                <div class="manager_block_info">
+                    <div class="inf_wrap">
+                        <p>Почта</p>
+                        <a href="#">exampleClient@gmail.com</a>
+                    </div>
+                    <div class="inf_wrap">
+                        <p>Телефон</p>
+                        <a href="#">+7 (999) 333-42-63</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-container-inner-lk ">
+           <div class="lk-part-item">
+                <div class="lk-mob-item">
+                    <a href="index.html" class="lk__aside-link link__last_lk">
+                        <img src="img/lk7.svg" alt="">
+                        <img src="img/lk7_a.svg" alt="">
+                        На главную
+                    </a>
+                </div>
+                <div class="lk-mob-item">
+                    <a href="" class="lk__aside-link link__last_lk">
+                        <img src="img/lk8.svg" alt="" class="out">
+                        <img src="img/lk8_a.svg" alt="">
+                        Выйти
+                    </a>
+                </div>
+           </div>
+        </div>
+      </div>
     
+
 	<script type="text/javascript" src="js/libs.js" defer></script>
 	<script type="text/javascript" src="js/lk.js" defer></script>
 	<script type="text/javascript" src="js/calc.js" defer></script>
-
+    <script type="text/javascript" src="js/js.js" defer></script>
 </body>
 </html>
