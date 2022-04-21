@@ -139,18 +139,31 @@ $(function() {
       e.preventDefault();
       $('.modalka__bg, .post__ready').removeClass('on');
     });
-
+    
+    $('.post__added').on('click', function (e) {
+      e.preventDefault();
+      $('.modalka__bg, .post__ready').removeClass('on');
+    });
     $('.pop_call').on('click', function (e) {
       e.preventDefault();
       $('#call_popup, .modalka__bg').addClass('on');
     });
     $('.modalka__close').on('click', function () {
       $('.modalka__bg').removeClass('on');
-      $('#call_popup, #call_feedback, #call_docs, #doc_view').removeClass('on');
+      $('#call_popup, #call_feedback, #call_docs, #doc_view,#call_readctor,#call_readctor2').removeClass('on');
     });
     $('.call_docs').on('click', function (e) {
       e.preventDefault();
       $('#call_docs, .modalka__bg').addClass('on');
+    });
+    $('.add-company').on('click', function (e) {
+      e.preventDefault();
+      $('#call_readctor, .modalka__bg').addClass('on');
+    });
+   
+    $('.add-next-col').on('click', function (e) {
+      e.preventDefault();
+      $('#call_readctor2, .modalka__bg').addClass('on');
     });
     $('.doc-view').on('click', function (e) {
       e.preventDefault();
