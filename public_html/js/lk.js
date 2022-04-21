@@ -264,3 +264,6 @@ $('.order__doc__lk').click(function(){
     $(this).find('img').removeClass('rotate')
   }
 });
+document.getElementById("uploadBtn").onchange = function () {
+  document.getElementById("uploadFile").value = this.value;
+};

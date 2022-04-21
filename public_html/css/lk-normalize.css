@@ -537,8 +537,81 @@ margin-bottom: 10px;
     opacity: 0;
     display: none;
 }
-
+.edit__done_box > span{
+    display: none;
+}
 @media (max-width:767px){
+    .fileUpload {
+     
+        height: 100px;
+        width: 100px;
+        margin-top: 0px !important;
+    }
+    .edit__lk__profile-ava{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .edit__done_box{
+        height: 46px !important;
+    width: 100% !important;
+    margin-right: unset !important;
+    margin: auto;
+    margin-bottom: 20px !important;
+
+    }
+    .edit__done {
+        margin-right: unset;
+        border-right: unset;
+        width: 100%;
+        height: unset !important;
+    }
+    .edit__done_box > span{
+        margin-right: 10px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #F1F5F8;
+        display: flex;
+    }
+    .fileUpload span {
+        color: #252D35;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 48%;
+            flex-direction: column-reverse;
+        text-align: center;
+        margin: auto;
+    }
+    .Upload span > img {
+        width: 10px;
+        margin-left: 0px;
+    }
+    .edit__lk__profile-ava > div {
+        margin-right: 12px !important;
+    }
+    .edit__selects  > fieldset > .projects__sort{
+        max-width: unset;
+        width: 100%;
+    }
+    .select{
+        width: 100%;
+    }
+    .lk__profile-left_edit{
+        flex-direction: column;
+    }
+    .edit__selects{
+        width: 100%;
+    }
+    .edit__selects {
+        margin-left: 0px !important;
+    }
     .lk__book-el-btns > .lk__book-el-del{
         opacity: 1;
         display: flex !important;
@@ -838,6 +911,111 @@ line-height: 20px;
 
 text-align: center;
 
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    background: #edf0f3;
+    padding: 10px;
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 12px;
+
+/* #1C242C */
+color: #252D35;
+
+
+}
+.edit__lk__profile-ava > div{
+    margin-right: 0px;
+}
+.edit__done{
+    height: 201px;
+    margin-right: 20px;
+    border-right: 1px solid #f1f1f1;
+}
+.edit__done_box{
+    background: linear-gradient(86.93deg, #B8884B 0%, #CC9C55 100%);
+border: 2px solid rgba(241, 245, 248, 0.3);
+box-sizing: border-box;
+box-shadow: 0px 8px 20px rgba(202, 154, 84, 0.35);
+width: 50px;
+height: 95%;
+margin-right: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.edit__done_box > img{
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fileUpload span >  img{
+    width: 10px;
+margin-left: 10px;
+}
+.lk__profile-left_edit{
+    align-items: start;
+}
+.edit__selects fieldset{
+    border: 2px solid #252D35;
+    margin-bottom: 23px;
+}
+.edit__selects fieldset legend{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 0px;
+    color: #252D35;
+    text-align: left;
+    width: unset;
+    padding: 0 2px;
+}
+.projects__sort > input::-webkit-input-placeholder{
+    font-weight: 600;
+    color: #252D35;
+    opacity: 1;
+
+}
+.lk__profile-right > .edit__selects {
+    margin-left: 0px !important;
+}
+.ks-select.select {
+    z-index: inherit !important;
+}
+.projects__sort > input{
+    width: 100%;
+    padding: 3px 10px;
+}
+.ks-select__current_edit{
+    background-color: white;
+    height: unset !important;
+}
+.edit__selects{
+    margin-left: 20px;
+}
+.fileUpload span{
+    color: #252D35;
+
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    /* opacity: 0; */
+    /* filter: alpha(opacity=0); */
+ 
 }
 @media (max-width:500px){
     .lk-edit-mob{
