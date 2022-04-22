@@ -64,6 +64,14 @@ color: #B8884B;
     .chat__messenger{
         max-width: 400px;
     }
+    .connect-select {
+        width: 100%;
+        max-width: 370px !important;
+    }
+    .select_item_connect .input_item {
+        max-width: 370px !important;
+        width: 100%;
+    }
     .lk__book-el .btn {
         width: calc(51% - 10px);
         font-size: 13px;
@@ -73,6 +81,10 @@ color: #B8884B;
 
     }
 
+}
+.rotate {
+    transform: rotate(180deg) !important;
+    transition: transform 0.3s ease;
 }
 @media (max-width:1200px){
     .manager__block{
@@ -712,9 +724,7 @@ margin-bottom: 10px;
         align-items: center;
         margin-right: 0px !important;
     }
-    .rotate {
-        transform: rotate(180deg) !important;
-    }
+  
     .hd__doc_accord{
         display: flex;
         align-items: center;
@@ -1134,6 +1144,9 @@ color: #252D35;
 .search-item{
     position: relative;
 }
+.tel__icon{
+    margin-left: 10px;
+}
 @media (max-width:370px){
     .link__last_lk {
         width: 110px;
@@ -1157,4 +1170,276 @@ color: #252D35;
         height: 60px;
     }
   
+}
+.lk__h2__connect {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+.ks-select-connect{
+    background-color: white;
+    margin-bottom: 0;
+    border-bottom: 2px solid #f1f5f8;
+}
+.connect-select{
+    
+    width: 100%;
+    max-width: 390px;
+}
+.connect-select .ks-select__item{
+    border-top: unset;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 15px;
+
+}
+.ks__item{
+    border-top: unset;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-right: 18px;
+
+}
+.item__tab_box{
+    position: absolute;
+    right: -315px;
+    display: none;
+    top: 0px;
+}
+.text__area{
+    height: 143px;
+    width: 100%;
+}
+.text__area > textarea{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+
+}
+.connect__sell__btns > p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252D35;
+    opacity: 0.5;
+    margin-bottom: 0px;
+}
+.connect__sell__btns > a{
+    margin-bottom: 12px;
+    width: 100%;
+}
+.connect-select{
+    background-color: transparent !important;
+}
+.lk__connection_iner{
+    display: flex;
+}
+ a.btn--grey--empty:hover span{
+    color: #fff;
+    background-color: var(--c-main);
+    margin-right: -25px;
+    z-index: 9;
+}
+
+.manager__block .ks-select__item {
+    border-top: unset;
+    background-color: unset;
+    display: unset;
+    justify-content: unset;
+    width:unset;
+    padding-right: unset;
+    padding: unset;
+}
+.ks-select__block__tab{
+    max-height: unset;
+    height: unset;
+}
+.item__tab_box .manager__block{
+    margin-bottom: 5px;
+}
+.ks-select__block__tab{
+    overflow-x: unset;
+    overflow-y: unset;
+}
+.ks__item:hover {
+    color: var(--c-brown);
+}
+.item__tab_box{
+    padding: 16px 14px;
+    background-color: white;
+}
+.item__tab_box > h6 {
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #252D35;
+}
+.ks__item.active {
+    color: var(--c-brown);
+}
+.select_item_connect{
+    display: flex;
+    max-width: 800px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.select_item_connect .input_item{
+    max-width: 390px;
+    width: 100%;
+}
+.input_item > input{
+    padding: 13px 10px;
+    width: 100%;
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+/* #1C242C */
+
+color: #252D35;
+
+}
+
+
+.sellect__arrow{
+    width: 7px;
+}
+.lk__connect-left{
+    max-width: 800px;
+    width: 100%;
+    margin-right: 31px;
+}
+.connect__form__box{
+    background-color: white;
+    padding: 22px;
+    max-width: 336px;
+}
+.connect__form__box h3{
+            
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 34px;
+        text-align: center;
+        color: #252D35;
+}
+.lk__fm {
+    margin-bottom: 20px;
+}
+.lk-fm-btn a{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+}
+.lk__fm > input{
+    background: #F1F4F8;
+    width: 100%;
+    padding: 15px 13px;
+    
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+/* #1C242C */
+
+color: #252D35;
+
+
+}
+.lk__connect-right form{
+    width: unset;
+    padding: unset;
+}
+@media (max-width:1000px){
+    .lk__connection_iner {
+        display: flex;
+        flex-direction: column;
+    }
+    .lk__connect-left {
+        max-width: unset;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .connect__form__box{
+        max-width: unset;
+    }
+    .select_item_connect {
+        display: flex;
+        max-width: unset;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .ks-select-connect{
+        margin-bottom: 20px;
+    }
+    .connect-select{
+        max-width: unset !important;
+    }
+
+
+    .select_item_connect .input_item {
+        max-width: unset !important;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .select_item_connect{
+        margin-bottom: 0px;
+    }
+    .text__area{
+        margin-bottom: 20px;
+    }
+    .item__tab_box {
+        position: unset;
+        right: 64px;
+        top: 0px;
+        z-index: 99;
+    }
+    .ks__item.active{
+        flex-direction: column;
+    align-items: start;
+    }
+    .sellect__arrow {
+        width: 7px;
+        position: absolute;
+        right: 17px;
+        transform: rotate(90deg);
+    }
+    .sellect__arrow.rotate{
+        transform: rotate(-90deg) !important;
+
+    }
+    .item__tab_box .manager__block {
+        margin-bottom: 8px;
+        margin-left: 0px;
+    }
+    .manager__block .ks-select__item{
+        padding-left: 10px;
+    }
 }

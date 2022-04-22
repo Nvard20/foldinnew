@@ -264,6 +264,29 @@ $('.order__doc__lk').click(function(){
     $(this).find('img').removeClass('rotate')
   }
 });
-document.getElementById("uploadBtn").onchange = function () {
-  document.getElementById("uploadFile").value = this.value;
-};
+// document.getElementById("uploadBtn").onchange = function () {
+//   document.getElementById("uploadFile").value = this.value;
+// };
+var clickitem = true;
+$('.ks__item').on('click',function(){
+  clickitem = !clickitem;
+  if(!clickitem){
+    $(this).find('.sellect__arrow').attr("src",'img/ord.png').addClass('rotate');
+    $(this).addClass('active');
+    $(this).find('.item__tab_box').show();
+   
+
+    
+  } else{
+    $(this).find('.sellect__arrow').attr("src",'img/arr1.svg').removeClass('rotate');
+    $(this).removeClass('active');
+    $(this).find('.item__tab_box').hide();
+      
+    
+  }
+  
+});
+
+// $('.ks__item').on('mouseleave',function(){
+//   $(this).find('.sellect__arrow').attr("src",'img/arr1.svg').removeClass('rotate');
+// })
